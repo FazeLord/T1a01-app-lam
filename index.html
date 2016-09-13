@@ -9,11 +9,11 @@ Hi <b>there</b> World <br><br>
   myIn  = document.getElementById('myInput')
   //alert(myIn.value)
 
-  for (myCount = 5; myCount >= 1; myCount--){
+  for (myCount = 10; myCount >= 1; myCount--){
 
      myOut.innerHTML += myCount + ' ' + myIn.value
 
-     if (myCount == 3){
+     if ((myCount==3)||(myCount==7)){
 
         myOut.innerHTML += ' Cool'
 
@@ -32,3 +32,4 @@ Hi <b>there</b> World <br><br>
    alert('The variable myOut contains ' + myOut.innerHTML)
 
 }">
+
