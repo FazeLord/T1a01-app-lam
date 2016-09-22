@@ -1,37 +1,47 @@
 
-<h1 align=center>t1a02-show by Fred </h1>
-
-<input id="myInput" type=text value="3"> <br><br>
+<h1 align=center>basic game by sam </h1>
 
 
-<input type=button value="Loop Add" onclick="{
+This is a training cat<br>
 
-  myOut = document.getElementById('myArea')
-  myIn  = document.getElementById('myInput')
-  myTotal = 0
+<div id="myQuestion" >?</div>
+<input type=button value="click me" onclick="{
+   document.getElementById('myQuestion').innerHTML = 'Kill the cat'
+}"><br>
 
-  for (myCount = 1; myCount <= 3; myCount++){
-     if ( myIn.value>= 2 ){
-         myTotal += 3
 
-     } 
-     myOut.innerHTML = myIn.value + ' repeat adding =' + myTotal
-  }
-
-}"> <br><br>
+CAT BOSS <img width=400 src="http://animalia-life.com/data_images/sphynx-cat/sphynx-cat1.jpg"><br>
 
 
 
-<div id="myArea" > Your output will go here <br></div> <br>
 
-<input type=button value="Show myIn.value" onclick="{
-  
-   alert(myIn.value)
+<input type=button value="GoUp"onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.top = parseInt(my01.style.top) -20 + 'px'
+
+}">
+<br> 
+<input type=button value="GoLeft"onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.left = parseInt(my01.style.left) - 20 + 'px'
+
+}">
+
+<input type=button value="GoRight"onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.left = parseInt(my01.style.left) + 20 + 'px'
+
+}">
+<br>
+<input type=button value="GoDown"onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.top = parseInt(my01.style.top) + 20 + 'px'
 
 }">
 
 
 
+<div id ="myDiv01" style=position:relative;left:0;top:0>Character</div>
 
 
 
